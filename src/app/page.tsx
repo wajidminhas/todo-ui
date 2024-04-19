@@ -1,9 +1,10 @@
 import Image from "next/image";
 import{ Modal} from "@/todo-components/Modal"
+import TodoTable from "@/todo-components/TodoTable";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-14">
+    <main className="">
 
       {/* Add task section  */}
       <section>
@@ -12,8 +13,8 @@ export default function Home() {
 
 
       {/* create table section  */}
-      <section>
-
+      <section className="mt-4">
+      <TodoTable />
       </section>
     </main>
   );

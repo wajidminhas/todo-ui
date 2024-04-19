@@ -10,23 +10,20 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import { AddTask } from "./AddTask"
 
 
 export function Modal() {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button variant="outline">Add Task + </Button>
+                <Button variant="destructive" className="w-full px-2 py-1 uppercase ">Add Task + </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
                 <DialogHeader>
                     <DialogTitle>Add New Task</DialogTitle>
-                   
                 </DialogHeader>
-                
-                <DialogFooter>
-                    <Button type="submit">Save changes</Button>
-                </DialogFooter>
+                <AddTask />
             </DialogContent>
         </Dialog>
     )
